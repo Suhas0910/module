@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Example Login Form</title>
+    <script>
+        fun1()
+        {
+           // document.getElementById("d").innerHTML=" welcome";
+            var u="suhas";
+            var p="suhas";
+            var text1=document.getElementById("user").value;
+            var text2=document.getElementById("pass").value;
+            if(text1.localeCompare(text2))
+            document.getElementById("d").innerHTML=" welcome";
+            else
+            document.getElementById("d").innerHTML=" wrong";
+        }
+
+
+    </script>
+  </head>
+  <body>
+	<form action="/static/login.html" method="post">
+  	<!-- user input-->
+  	Username:<br>
+  	<input id="user" type="text" name="username" placeholder="Username" required><br><br>
+  	Password:<br>
+  	<input id="pass" type="password" name="password" placeholder="Password" required><br><br>
+  	<!-- submit button -->
+  	<button onclick="fun1()">LOGIN</button>
+	</form>
+    <div id="d">
+
+    </div>
+  </body>
+</html>
